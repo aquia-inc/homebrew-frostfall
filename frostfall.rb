@@ -5,21 +5,21 @@
 class Frostfall < Formula
   desc "Accessibility testing made easy"
   homepage "https://github.com/aquia-inc/frostfall"
-  version "1.6.1"
+  version "1.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aquia-inc/frostfall/releases/download/v1.6.1/frostfall_Darwin_x86_64.tar.gz"
-      sha256 "11dac38e85a2b24da032e66542012bd7d56425e299e30d58631883148504a631"
+      url "https://github.com/aquia-inc/frostfall/releases/download/v1.7.0/frostfall_Darwin_x86_64.tar.gz"
+      sha256 "98ceb96ad504605e1c0c87a3f23c9eba855bcd7dd52bff0e8a75d095ff0661c0"
 
       define_method(:install) do
         bin.install "frostfall"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aquia-inc/frostfall/releases/download/v1.6.1/frostfall_Darwin_arm64.tar.gz"
-      sha256 "ed3d4fae139151c10cf96b975e6c1ace687a6194f21a3d72c7d964c328a36921"
+      url "https://github.com/aquia-inc/frostfall/releases/download/v1.7.0/frostfall_Darwin_arm64.tar.gz"
+      sha256 "3537c468dfe1a2b46c3664ff34c1539de9eda2a03967a68248e51540912c0d19"
 
       define_method(:install) do
         bin.install "frostfall"
@@ -29,15 +29,15 @@ class Frostfall < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aquia-inc/frostfall/releases/download/v1.6.1/frostfall_Linux_x86_64.tar.gz"
-      sha256 "43925281c28f2a1055057001ded04561c68212d7f9de429b32f8347e762ebed4"
+      url "https://github.com/aquia-inc/frostfall/releases/download/v1.7.0/frostfall_Linux_x86_64.tar.gz"
+      sha256 "78362c8cdd7349daba9c0827eb094c7953d76072d645d099a5e464a9c9dc8dd9"
       define_method(:install) do
         bin.install "frostfall"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aquia-inc/frostfall/releases/download/v1.6.1/frostfall_Linux_arm64.tar.gz"
-      sha256 "701883792dcc8cb5250d65e8085f68f2c6443184ab394b25dc2a988a41018bc9"
+      url "https://github.com/aquia-inc/frostfall/releases/download/v1.7.0/frostfall_Linux_arm64.tar.gz"
+      sha256 "fc09de828d4797214ef9cbda9b296cadcd112b6165c6518573b9f2d9f94a97a9"
       define_method(:install) do
         bin.install "frostfall"
       end
